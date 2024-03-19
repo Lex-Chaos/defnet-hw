@@ -28,12 +28,19 @@
 
 Ответ:
 
+Скрипт проверки сервера Nginx:
+[Ссылка на файл скрипта](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/check_nginx.sh)
+
+Конфигурационный файл keepalived:
+[Ссылка на конфигурационный файл](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/keepalived.conf)
+
+Сервер работает без сбоев:
+![Работа без сбоев](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Normal_working.png)
+
+Отсутствует файл index.html:
+![Отсутствует файл](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Delete_index.png)
+
+Закрыт порт:
+![Работа без сбоев](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Close_port.png)
+
 ---
-
-### Задание 3
-
-Ответ:
-
-### Задание 4*
-
-Ответ:
