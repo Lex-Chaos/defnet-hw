@@ -44,3 +44,23 @@
 ![Работа без сбоев](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Close_port.png)
 
 ---
+
+### Задание 3*
+
+Ответ:
+
+Скрипт для определения коэффициента:
+[Ссылка на файл скрипта](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/Task3_balance_load.sh)
+
+Конфигурационный файл keepalived:
+[Ссылка на конфигурационный файл](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/Task3_keepalived.conf)
+
+Файлы для серверов отличаются только состоянием MASTER - BACKUP и приоритетом.
+Лог сервера 1:
+![Лог сервера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task3_server1.png)
+
+Лог сервера 2:
+![Лог сервера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task3_server2.png)
+
+Лог сервера 3:
+![Лог сервера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task3_server3.png)
