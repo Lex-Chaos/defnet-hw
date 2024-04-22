@@ -1,26 +1,12 @@
-# Домашняя работа к занятию «Disasters recovery и Keepalived» - Боровик А. А.
+# Домашняя работа к занятию «Защита сети» - Боровик А. А.
 
 ### Задание 1
 
 Ответ:
 
-Настройка роутера 1
+Лог 'suricata' показывает, что произошло сканирование открытых портов с адреса 192.168.111.20 (kali linux):
 
-![Настройка роутера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Настройка_для_роутера_1.png)
-
-Результат настройки роутера 1
-
-![Результат настройки роутера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Результат_настройки_для_роутера_1.png)
-
-Настройка роутера 2
-
-![Настройка роутера 2](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Настройка_для_роутера_2.png)
-
-Результат настройки роутера 2
-
-![Результат настройки роутера 2](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Результат_настройки_для_роутера_2.png)
-
-[Ссылка на файл для CPT](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/hsrp_advanced_ready.pkt)
+![Лог suricata](https://github.com/Lex-Chaos/defnet-hw/blob/main/img/Task1_suricatalog.png)
 
 ---
 
@@ -28,39 +14,12 @@
 
 Ответ:
 
-Скрипт проверки сервера Nginx:
-[Ссылка на файл скрипта](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/check_nginx.sh)
+При включённом fail2ban видны многочисленные попытки входа с помощью логина/пароля.
 
-Конфигурационный файл keepalived:
-[Ссылка на конфигурационный файл](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/keepalived.conf)
+Файл '/var/log/auth.log':
 
-Сервер работает без сбоев:
-![Работа без сбоев](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Normal_working.png)
+![Файл auth.log](https://github.com/Lex-Chaos/defnet-hw/blob/main/img/Task2_authlog.png)
 
-Отсутствует файл index.html:
-![Отсутствует файл](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Delete_index.png)
+Файл '/var/log/fail2ban.log':
 
-Закрыт порт:
-![Работа без сбоев](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Close_port.png)
-
----
-
-### Задание 3*
-
-Ответ:
-
-Скрипт для определения коэффициента:
-[Ссылка на файл скрипта](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/Task3_balance_load.sh)
-
-Конфигурационный файл keepalived:
-[Ссылка на конфигурационный файл](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/Task3_keepalived.conf)
-
-Файлы для серверов отличаются только состоянием MASTER - BACKUP и приоритетом.
-Лог сервера 1:
-![Лог сервера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task3_server1.png)
-
-Лог сервера 2:
-![Лог сервера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task3_server2.png)
-
-Лог сервера 3:
-![Лог сервера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task3_server3.png)
+![Файл fail2ban.log](https://github.com/Lex-Chaos/defnet-hw/blob/main/img/Task2_fail2banlog.png)
