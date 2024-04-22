@@ -23,3 +23,5 @@
 Файл '/var/log/fail2ban.log':
 
 ![Файл fail2ban.log](https://github.com/Lex-Chaos/defnet-hw/blob/main/img/Task2_fail2banlog.png)
+
+После чего последовал бан адреса 192.168.111.20.
